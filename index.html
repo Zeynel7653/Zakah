@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حساب الزكاة</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>حساب الزكاة</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#calculator">حاسبة الزكاة</a></li>
+                <li><a href="#about">عن الموقع</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="calculator">
+        <h2>حاسبة الزكاة</h2>
+        <form id="zakahForm">
+            <label for="goldValue">قيمة الذهب (بالجنيه):</label>
+            <input type="number" id="goldValue" name="goldValue" required>
+
+            <label for="cashValue">قيمة النقود (بالجنيه):</label>
+            <input type="number" id="cashValue" name="cashValue" required>
+
+            <label for="otherAssets">الأصول الأخرى:</label>
+            <input type="number" id="otherAssets" name="otherAssets" required>
+
+            <button type="button" onclick="calculateZakah()">احسب الزكاة</button>
+        </form>
+
+        <div id="result"></div>
+    </section>
+
+    <footer>
+        <p>حقوق الطبع © 2024 - موقع الزكاة</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
